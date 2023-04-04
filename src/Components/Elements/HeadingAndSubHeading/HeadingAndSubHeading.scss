@@ -1,0 +1,36 @@
+.HeadingSubheading{
+    .headingNormal{
+        h3{
+            color: #2d2e32;
+            font-family: Poppins,sans-serif;
+            font-size: 25px;
+            line-height: 1.4;
+            display: inline;
+        }
+    }
+    .headingBold{
+        h1{
+            color: #2d2e32;
+            font-size: 55px;
+            line-height: 1.2;
+            font-weight: bold;
+            display: inline;
+        }
+        
+    }
+
+    &__subheading{
+        padding-top: 25px;
+    }
+    
+    .subHeadingNormal{
+        color: #767676;
+        font-family: Mulish,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .subHeadingBold{
+        color:pink
+    }
+}

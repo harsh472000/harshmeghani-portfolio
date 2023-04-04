@@ -1,0 +1,93 @@
+@import "../../styles/_variables";
+
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 9%);
+    &__heading{
+        color: black;
+        font-size: 20px;
+    }
+    &__navigation{
+        &__links{
+            display: flex;
+            list-style-type: none;
+            &__li{
+                margin-right: 20px;
+                color: #2d2e32;
+                font-weight: 700;
+                text-decoration: none;
+                transition: all .23s;
+                cursor: pointer;
+                font-size: 18px;
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    &__hamburger{
+        @media only screen and (min-width: 640px) {
+            display: none;
+        }
+    }
+    
+    // Media Query for small screens
+    @media only screen and (max-width: 767px) {
+        padding: 15px 20px;
+        &__heading{
+            font-size: 16px;
+        }
+        &__navigation{
+            position: fixed;
+            top: 75px;
+            left: 0;
+            background-color: white;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s ease-in-out;
+            width: 100%;
+            &.active{
+                height: calc(100vh - 75px);
+            }
+            &__links{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                &__li{
+                    margin: 30px 0;
+                    font-size: 22px;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+    
+    // Media Query for medium and large screens
+    @media only screen and (min-width: 768px) {
+        &__navigation{
+            position: static;
+            height: auto;
+            width: auto;
+            background-color: transparent;
+            &__links{
+                flex-direction: row;
+                margin-top: 0;
+                &__li{
+                    margin: 0 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+

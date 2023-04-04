@@ -1,0 +1,61 @@
+@import "../../styles/_variables";
+@mixin morph {
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+      50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
+      100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+    }
+  
+    animation: morph 8s ease-in-out infinite;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: morph;
+  }
+
+
+.homeContainer{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        max-width: 500px;
+        &__wrapper{
+            padding-top: 20px;
+            &__icons{
+                color: black;
+                padding-right: 10px;
+                &:hover{
+                    color:$primaryColor;
+                    transform: scale(1.2);
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+    }
+    &__right{
+        &__img{
+            @include morph;
+            background-image: url(../../Assets/myImg.JPG);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 300px;
+            border: 3px solid #2d2e32;
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+            height: 350px;
+            position: relative;
+            transition: all 1s ease-in-out;
+            width: 350px;
+        }
+    }
+}
