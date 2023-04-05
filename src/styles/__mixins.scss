@@ -1,0 +1,15 @@
+@mixin width__container {
+    margin: 0 auto;
+    max-width: 65%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+@mixin with_background {
+    background-color: $backgroundColor;
+    padding: 40px 0px;
+}
+
+@mixin without_background {
+  padding: 40px 0px;
+}

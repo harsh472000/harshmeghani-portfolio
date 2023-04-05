@@ -1,0 +1,6 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+.container{
+    @include width__container;  
+}

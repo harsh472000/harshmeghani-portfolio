@@ -1,10 +1,22 @@
+@import "../src/styles/_variables";
+@import "../src/styles/_mixins";
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.MainContainer{
-  margin: 0 auto;
-  max-width: 65%;
+.home{
+  @include with_background;
 }
+
+.about{
+  @include without_background;
+}
+
+.projects{
+  @include with_background;
+}
+
+

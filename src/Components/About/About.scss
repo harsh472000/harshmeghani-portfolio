@@ -1,0 +1,59 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+@mixin rotate {
+    @keyframes rotate {
+        
+        100% {
+            transform: rotate(1turn);
+        }
+      }
+    animation: rotate 9s linear infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: rotate;
+}
+
+.container{
+    @include width__container;   
+}
+
+.aboutContainer{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__left{
+        position: relative;
+        &__emoji{
+            bottom: 35px;
+            position: absolute;
+            right: 98px;
+            width: 60px !important;
+            z-index: 10
+        }
+        &__laptopimg{
+            border-radius: 17px;
+            height: 350px;
+            width: 410px;
+        }
+        &__textimg{
+            
+            @include rotate;
+            width: 190px;
+        }
+        span{
+            background-color: #fff;
+            border-radius: 50%;
+            bottom: -33px;
+            height: 190px;
+            position: absolute;
+            right: 33px;
+            width: 190px;
+        }
+    }
+}
