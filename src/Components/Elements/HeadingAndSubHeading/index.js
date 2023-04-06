@@ -10,12 +10,17 @@ function HeadingAndSubHeading({
   subheadingStyle,
   className,
   additionalElement,
+  center,
   ...props
 }) {
   return (
     <>
       <div className="HeadingSubheading">
-        <div className={`HeadingSubheading__heading ${headingStyle}`}>
+        <div
+          className={`HeadingSubheading__heading ${headingStyle} ${
+            center ? "center" : ""
+          }`}
+        >
           {headingStyle === "headingNormal" ? (
             <h3>{heading}</h3>
           ) : (
@@ -23,7 +28,11 @@ function HeadingAndSubHeading({
           )}
           {additionalElement ? additionalElement : ""}
         </div>
-        <div className={`HeadingSubheading__subheading ${subheadingStyle}`}>
+        <div
+          className={`HeadingSubheading__subheading ${subheadingStyle} ${
+            center ? "center" : ""
+          }`}
+        >
           {subheading}
         </div>
       </div>
@@ -43,6 +52,7 @@ HeadingAndSubHeading.propTypes = {
     "subHeadingSecondary",
   ]),
   className: PropTypes.string,
+  center: PropTypes.bool,
 };
 
 HeadingAndSubHeading.defaultProps = {
@@ -50,6 +60,7 @@ HeadingAndSubHeading.defaultProps = {
   headingStyle: "",
   subheadingStyle: "",
   className: "",
+  center: false,
 };
 
 export default HeadingAndSubHeading;

@@ -18,6 +18,9 @@
         }
         
     }
+    .center{
+        text-align: center;
+    }
 
     &__subheading{
         padding-top: 25px;
@@ -31,6 +34,11 @@
         line-height: 1.6;
     }
     .subHeadingBold{
-        color:pink
+        color: #767676;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: none;
+        line-height:1.4;
     }
+
 }
