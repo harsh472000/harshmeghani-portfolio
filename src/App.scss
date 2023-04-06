@@ -11,11 +11,11 @@
   @include with_background;
 }
 
-.about{
+.about,.experience{
   @include without_background;
 }
 
-.projects{
+.projects,.contact{
   @include with_background;
 }
 

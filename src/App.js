@@ -3,19 +3,27 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
+import Experience from "./Components/Experience";
+import Contact from "./Components/Contanct";
 
 function App() {
   return (
     <>
       <Navbar />
-      <section className="home">
+      <section className="home" id="Home">
         <Home />
       </section>
-      <section className="about">
+      <section className="about" id="About">
         <About />
       </section>
-      <section className="projects">
+      <section className="projects" id="Project">
         <Projects />
+      </section>
+      <section className="experience" id="Experience">
+        <Experience />
+      </section>
+      <section className="contact" id="Contact">
+        <Contact />
       </section>
     </>
   );

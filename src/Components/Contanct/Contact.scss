@@ -1,0 +1,42 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+.container{
+    @include width__container;   
+}
+
+.contactContainer{
+    margin-top: 40px;
+    &__wrapper{
+        display: flex;
+        &__icon{
+            span{
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+                padding: 30px 25px;
+            }
+            &__icons{
+                padding-left: 0;
+                color:$primaryColor;
+                height: 32px;
+                width: 32px;
+            }
+        }
+        &__iconheading{
+            padding-right: 30px;
+            display: flex;
+        }
+        &__headingsub{
+            padding-left: 20px;
+            p{
+                color: #767676;
+                cursor: pointer;
+                font-size: 17px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}

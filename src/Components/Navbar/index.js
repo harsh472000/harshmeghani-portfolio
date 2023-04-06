@@ -6,7 +6,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const NavMenus = ["Home", "About", "Project", "Contact"];
+  const NavMenus = ["Home", "About", "Project", "Experience", "Contact"];
   const toggleNavItems = () => {
     setOpen(!open);
   };
@@ -28,7 +28,8 @@ function Navbar() {
             {NavMenus.map((menu, index) => {
               return (
                 <li className="NavbarContainer__navigation__links__li">
-                  {menu}
+                  <a href={`#${menu}`}>{menu}</a>
+                  {/* {menu} */}
                 </li>
               );
             })}

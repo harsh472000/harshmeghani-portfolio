@@ -1,0 +1,21 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+.container{
+    @include width__container;   
+}
+
+.experience{
+    &__container{
+        display: flex;
+        &__left{
+            width: 70%;
+            padding-right: 50px;
+        }  
+        &__right{
+            width: 30%;
+            
+        } 
+    }
+    
+}

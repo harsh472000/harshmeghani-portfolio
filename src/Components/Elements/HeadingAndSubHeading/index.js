@@ -42,7 +42,6 @@ function HeadingAndSubHeading({
 
 HeadingAndSubHeading.propTypes = {
   heading: PropTypes.string.isRequired,
-  subheading: PropTypes.string.isRequired,
   type: PropTypes.string,
   headingStyle: PropTypes.oneOf(["headingNormal", "headingBold"]),
   subheadingStyle: PropTypes.oneOf([

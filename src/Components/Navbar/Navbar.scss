@@ -26,8 +26,13 @@
                 transition: all .23s;
                 cursor: pointer;
                 font-size: 18px;
-                &:hover{
-                    color: $primaryColor;
+                
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: $primaryColor;
+                    }
                 }
             }
         }
