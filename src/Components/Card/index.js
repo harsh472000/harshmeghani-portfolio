@@ -5,8 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./Card.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Card() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const projects = [
     {
       heading: "CAR RENTAL",
@@ -54,7 +60,12 @@ function Card() {
         }`;
         return (
           <>
-            <div className={`cardContainer ${containerClassName}`} key={index}>
+            <div
+              className={`cardContainer ${containerClassName}`}
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="cardContainer__left">
                 <a target="_blank" href="www.link.com">
                   <img src={carProject} alt="projectImg" />

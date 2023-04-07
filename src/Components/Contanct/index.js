@@ -5,8 +5,14 @@ import "./Contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 //import { faEnvelope } from "@fortawesome/free-brands-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const contactDetails = [
     {
       icon: (
@@ -39,7 +45,11 @@ function Contact() {
           heading="Don't be shy! Hit me up! 👇"
           headingStyle="headingNormal"
         />
-        <div className="contactContainer">
+        <div
+          className="contactContainer"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="contactContainer__wrapper">
             {contactDetails?.map((contact, index) => {
               return (

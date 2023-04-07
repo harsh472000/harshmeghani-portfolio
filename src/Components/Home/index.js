@@ -5,8 +5,14 @@ import wavingHand from "../../Assets/wavingHand.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import TechIcons from "../Elements/TechIcons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const icons = [
     {
       name: "GitHub",
@@ -21,7 +27,7 @@ function Home() {
   ];
   return (
     <>
-      <div className="container">
+      <div className="container" data-aos="zoom-in" data-aos-duration="1000">
         <div className="homeContainer">
           <div className="homeContainer__left">
             <HeadingAndSubHeading
