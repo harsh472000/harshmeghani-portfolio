@@ -18,7 +18,7 @@
   width: 100%;
   background-color: #fff;
   border-radius: 17px;
-  box-shadow: 0 0 10px rgb(0, 0, 0 / 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 20px;
   display: flex;
   margin-bottom: 40px;
@@ -30,7 +30,7 @@
   &__left {
     background-color: hsla(0, 0%, 46%, 0.2);
     border-radius: 17px;
-    box-shadow: 0 0 10px rgb(0, 0, 0 / 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     height: 100%;
     overflow: hidden;
     min-width: 530px;
@@ -62,7 +62,7 @@
       margin-top: 20px;
       p {
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // using decimal value
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); // using decimal value
         color: #000 !important;
         font-family: Mulish, sans-serif !important;
         font-weight: 600 !important;

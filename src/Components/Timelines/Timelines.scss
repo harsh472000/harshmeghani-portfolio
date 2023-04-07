@@ -8,13 +8,11 @@
         }
         
     }
-    &__name{
-        
-    }
+    
     &__badges{
         padding: 10px;
         background-color: $badgeColor;
-        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
         display: inline-block;
     }
     &__list{
