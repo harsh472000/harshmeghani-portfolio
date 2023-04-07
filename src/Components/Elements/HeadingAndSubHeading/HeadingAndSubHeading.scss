@@ -1,20 +1,32 @@
+@import "../../../styles/_variables";
+
 .HeadingSubheading{
     .headingNormal{
+        @media screen and (max-width: $small) {
+            text-align: center;
+          }
         h3{
             color: #2d2e32;
             font-family: Poppins,sans-serif;
             font-size: 25px;
             line-height: 1.4;
             display: inline;
+            
         }
     }
     .headingBold{
+        @media screen and (max-width: $small) {
+            text-align: center;
+          }
         h1{
             color: #2d2e32;
             font-size: 55px;
             line-height: 1.2;
             font-weight: bold;
             display: inline;
+            @media screen and (max-width: $small) {
+                font-size: 40px;
+              }
         }
         
     }
@@ -32,6 +44,9 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 1.6;
+        @media screen and (max-width: $small) {
+            text-align: center;
+          }
     }
     .subHeadingBold{
         color: #767676;
@@ -39,6 +54,9 @@
         font-weight: 700;
         text-transform: none;
         line-height:1.4;
+        @media screen and (max-width: $small) {
+            text-align: center;
+          }
     }
 
 }

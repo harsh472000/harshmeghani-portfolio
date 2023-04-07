@@ -51,7 +51,7 @@
         }
         &__navigation{
             position: fixed;
-            top: 75px;
+            top: 50px;
             left: 0;
             background-color: white;
             height: 0;
@@ -59,7 +59,7 @@
             transition: all .3s ease-in-out;
             width: 100%;
             &.active{
-                height: calc(100vh - 75px);
+                height: calc(100vh - 50px);
             }
             &__links{
                 flex-direction: column;

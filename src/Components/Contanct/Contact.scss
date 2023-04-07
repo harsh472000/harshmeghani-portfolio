@@ -9,6 +9,10 @@
     margin-top: 40px;
     &__wrapper{
         display: flex;
+        @media screen and (max-width: $small) {
+            flex-direction: column;
+            gap: 50px;
+          }
         &__icon{
             span{
                 background-color: #fff;

@@ -30,10 +30,17 @@
 .homeContainer{ 
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+    }
     &__left{
         max-width: 500px;
         &__wrapper{
             padding-top: 20px;
+            @media screen and (max-width: $small) {
+              display: flex;
+              justify-content: center;
+            }
             &__icons{
                 color: black;
                 padding-right: 10px;
@@ -58,6 +65,10 @@
             position: relative;
             transition: all 1s ease-in-out;
             width: 350px;
+            @media screen and (max-width: $small) {
+              width: auto;
+              margin-top: 20px;
+            }
         }
     }
 }

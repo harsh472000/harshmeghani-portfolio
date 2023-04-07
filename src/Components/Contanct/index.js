@@ -43,7 +43,10 @@ function Contact() {
           <div className="contactContainer__wrapper">
             {contactDetails?.map((contact, index) => {
               return (
-                <div className="contactContainer__wrapper__iconheading">
+                <div
+                  className="contactContainer__wrapper__iconheading"
+                  key={index}
+                >
                   <div className="contactContainer__wrapper__icon">
                     <span>{contact.icon}</span>
                   </div>

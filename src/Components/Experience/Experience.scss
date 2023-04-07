@@ -8,13 +8,22 @@
 .experience{
     &__container{
         display: flex;
+        @media screen and (max-width: $small) {
+            flex-direction: column;
+          }
         &__left{
             width: 70%;
             padding-right: 50px;
+            @media screen and (max-width: $small) {
+                width: 100%;
+                padding-right: 0px;
+              }
         }  
         &__right{
             width: 30%;
-            
+            @media screen and (max-width: $small) {
+                width: 100%;
+              }
         } 
     }
     

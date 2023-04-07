@@ -26,6 +26,9 @@
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: $small) {
+        display: inline;
+      }
     &__left{
         position: relative;
         &__emoji{
@@ -33,17 +36,27 @@
             position: absolute;
             right: 98px;
             width: 60px !important;
-            z-index: 10
+            z-index: 10;
+            @media screen and (max-width: $small) {
+                display: none;
+              }
         }
         &__laptopimg{
             border-radius: 17px;
             height: 350px;
             width: 410px;
+            @media screen and (max-width: $small) {
+                height: auto;
+                width: 100%;
+              }
         }
         &__textimg{
             
             @include rotate;
             width: 190px;
+            @media screen and (max-width: $small) {
+                display: none;
+              }
         }
         span{
             background-color: #fff;
@@ -53,6 +66,15 @@
             position: absolute;
             right: 33px;
             width: 190px;
+            @media screen and (max-width: $small) {
+                display: none;
+              }
         }
+    }
+
+    &__right{
+        @media screen and (max-width: $small) {
+             margin-top: 20px;
+          }
     }
 }

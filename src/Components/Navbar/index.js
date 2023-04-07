@@ -10,6 +10,12 @@ function Navbar() {
   const toggleNavItems = () => {
     setOpen(!open);
   };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="NavbarContainer">
@@ -27,8 +33,19 @@ function Navbar() {
           <ul className="NavbarContainer__navigation__links">
             {NavMenus.map((menu, index) => {
               return (
-                <li className="NavbarContainer__navigation__links__li">
-                  <a href={`#${menu}`}>{menu}</a>
+                <li
+                  className="NavbarContainer__navigation__links__li"
+                  key={index}
+                >
+                  <a
+                    href={`#${menu}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(menu);
+                    }}
+                  >
+                    {menu}
+                  </a>
                   {/* {menu} */}
                 </li>
               );
