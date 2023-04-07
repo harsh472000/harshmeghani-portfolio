@@ -18,7 +18,7 @@
   width: 100%;
   background-color: #fff;
   border-radius: 17px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px rgb(0, 0, 0 / 0.1);
   padding: 20px;
   display: flex;
   margin-bottom: 40px;
@@ -30,7 +30,7 @@
   &__left {
     background-color: hsla(0, 0%, 46%, 0.2);
     border-radius: 17px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 10px rgb(0, 0, 0 / 0.1);
     height: 100%;
     overflow: hidden;
     min-width: 530px;
