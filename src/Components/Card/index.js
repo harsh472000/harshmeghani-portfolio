@@ -99,7 +99,7 @@ function Card() {
                       className="cardContainer__right__links__icon"
                     />
                   </a>
-                  <a href={project.links[0].demoLink} target="_blank">
+                  <a href={project.links[0].demoLink} target="_blank"  rel="noreferrer">
                     Live Demo
                     <FontAwesomeIcon
                       icon={faLink}
