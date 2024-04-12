@@ -91,7 +91,7 @@ function Card() {
                   })}
                 </div>
                 <div className="cardContainer__right__links">
-                  <a href={project.links[0].githubLink} target="_blank">
+                  <a href={project.links[0].githubLink} target="_blank"  rel="noreferrer">
                     code
                     <FontAwesomeIcon
                       icon={faGithub}
