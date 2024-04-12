@@ -1,5 +1,7 @@
 import React from "react";
-import carProject from "../../Assets/carProject.webp";
+import personalPort from "../../Assets/personalport.png";
+import borcelloAdmin from "../../Assets/Borcello_Admin.png";
+import borcelloStore from "../../Assets/borcello_store.png";
 import HeadingAndSubHeading from "../Elements/HeadingAndSubHeading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -15,40 +17,43 @@ function Card() {
   }, []);
   const projects = [
     {
-      heading: "CAR RENTAL",
+      heading: "Borcello Admin",
       subheading:
-        "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
-      badges: ["React", "Tailwind"],
+        "Designed and implemented a comprehensive Bocello admin dashboard with features for managing products, collections, and orders, alongside interactive charts and customer data visualization..",
+      badges: ["Nextjs", "Tailwind","MonogDb"],
       links: [
         {
-          githubLink: "",
-          demoLink: "",
+          githubLink: "https://github.com/harsh472000/barcello_admin",
+          demoLink: "https://barcello-admin-a4ao.vercel.app/",
         },
       ],
+      image: borcelloAdmin
     },
     {
-      heading: "COINDOM 🪙",
+      heading: "Bocello Fashion Store",
       subheading:
-        "Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.",
-      badges: ["React", "Tailwind"],
+        "Designed and developed a fully functional fashion store ecommerce website, enabling users to browse and purchase products seamlessly. Integrated Stripe payment gateway for secure and efficient online transactions.",
+      badges: ["Nextjs", "Tailwind","MongoDB"],
       links: [
         {
-          githubLink: "",
-          demoLink: "",
+          githubLink: "https://github.com/harsh472000/fashion_store",
+          demoLink: "fashion-store-seven-alpha.vercel.app",
         },
       ],
+      image: borcelloStore
     },
     {
-      heading: "GYMATE 🏋️",
+      heading: "Personal Portfolio",
       subheading:
-        "A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.",
-      badges: ["React", "Tailwind", "Scss"],
+        "Developed a sleek and professional personal portfolio website using React and SCSS, adhering to industry best practices and new coding standards. Implemented a clean and modern design to showcase skills, projects, and achievements effectively",
+      badges: ["React", "Scss"],
       links: [
         {
-          githubLink: "",
-          demoLink: "",
+          githubLink: "https://github.com/harsh472000/harshmeghani-portfolio",
+          demoLink: "https://harshmeghani.netlify.app/",
         },
       ],
+      image: personalPort
     },
   ];
   return (
@@ -68,7 +73,7 @@ function Card() {
             >
               <div className="cardContainer__left">
                 <a target="_blank" href="www.link.com">
-                  <img src={carProject} alt="projectImg" />
+                  <img src={project.image} alt="projectImg" />
                 </a>
               </div>
               <div className="cardContainer__right">
@@ -86,7 +91,7 @@ function Card() {
                   })}
                 </div>
                 <div className="cardContainer__right__links">
-                  <a href="www.github.com" target="_blank">
+                  <a href={project.links[0].githubLink} target="_blank">
                     code
                     <FontAwesomeIcon
                       icon={faGithub}
@@ -94,7 +99,7 @@ function Card() {
                       className="cardContainer__right__links__icon"
                     />
                   </a>
-                  <a href="www.github.com" target="_blank">
+                  <a href={project.links[0].demoLink} target="_blank">
                     Live Demo
                     <FontAwesomeIcon
                       icon={faLink}

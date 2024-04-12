@@ -16,12 +16,12 @@ function Home() {
   const icons = [
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/harsh472000",
       icon: <FontAwesomeIcon icon={faGithub} size="2xl" />,
     },
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/harsh-meghani",
       icon: <FontAwesomeIcon icon={faLinkedin} size="2xl" />,
     },
   ];

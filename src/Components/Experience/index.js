@@ -15,6 +15,8 @@ function Experience() {
         "Develop reusable and modular components to maintain consistency and reduce code redundancy.",
         "Write clean and well-structured code that is easy to read, understand and maintain.",
         "Use version control systems like Git to keep track of code changes and collaborate with other developers.",
+        "Communicating technical issues in an understandable manner to the team and clients.",
+        "Testing to identify bugs and technical issues before and after deploying."
       ],
     },
     {
