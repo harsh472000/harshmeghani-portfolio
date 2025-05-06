@@ -4,13 +4,13 @@
 .skills{
     display: flex;
     align-items: center;
-    max-width: 700px;
+    max-width: 730px;
     padding-top: 40px;
     @media screen and (max-width: $small) {
         flex-direction: column;
       }
     p{
-        margin-right: 40px;
+        margin-right: 25px;
         display: flex;
         //align-items: center;
         padding-right: 20px;
@@ -41,23 +41,55 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
-            li{
+            li {
                 align-items: center;
                 background-color: #fff;
                 border-radius: 50%;
-                box-shadow: 0 0 10px rgba(0,0,0,0.09);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
                 cursor: pointer;
                 display: flex;
                 height: 65px;
                 margin-right: 5px;
                 justify-content: center;
                 width: 65px;
-                img{
-                    width: 34px;
-                    height: auto;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 0.6s ease forwards;
+              
+                &:hover {
+                  transform: scale(1.15);
+                  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
                 }
-            }
+              
+                img {
+                  width: 34px;
+                  height: auto;
+                }
+              
+                // Staggered animation delays
+                &:nth-child(1) { animation-delay: 0.1s; }
+                &:nth-child(2) { animation-delay: 0.2s; }
+                &:nth-child(3) { animation-delay: 0.3s; }
+                &:nth-child(4) { animation-delay: 0.4s; }
+                &:nth-child(5) { animation-delay: 0.5s; }
+                &:nth-child(6) { animation-delay: 0.6s; }
+                &:nth-child(7) { animation-delay: 0.7s; }
+                &:nth-child(8) { animation-delay: 0.8s; }
+              }              
         }
         
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

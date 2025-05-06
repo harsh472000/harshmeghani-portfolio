@@ -5,26 +5,37 @@
     @include width__container;   
 }
 
-.experience{
-    &__container{
-        display: flex;
+.experience {
+    &__container {
+      display: flex;
+  
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+      }
+  
+      &__left {
+        width: 70%;
+        padding-right: 50px;
+  
         @media screen and (max-width: $small) {
-            flex-direction: column;
-          }
-        &__left{
-            width: 70%;
-            padding-right: 50px;
-            @media screen and (max-width: $small) {
-                width: 100%;
-                padding-right: 0px;
-              }
-        }  
-        &__right{
-            width: 30%;
-            @media screen and (max-width: $small) {
-                width: 100%;
-              }
-        } 
+          width: 100%;
+          padding-right: 0px;
+        }
+      }
+  
+      &__right {
+        width: 30%;
+  
+        // 👇 Add sticky behavior
+        position: sticky;
+        top: 100px; // Adjust based on your navbar/header height
+        align-self: flex-start;
+  
+        @media screen and (max-width: $small) {
+          position: static; // Disable sticky on small screens
+          width: 100%;
+        }
+      }
     }
-    
-}
+  }
+  

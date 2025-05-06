@@ -9,12 +9,17 @@
         
     }
     
-    &__badges{
-        padding: 10px;
-        background-color: $badgeColor;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    &__badges {
+        padding: 6px 12px;
+        background-color: #f0f4ff; // Light blue for subtle contrast
+        color: #1a3c8b;            // Darker text for better readability
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
         display: inline-block;
-    }
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border: 1px solid #dbe4f0; // Optional border for more definition
+      }
     &__list{
         margin: 10px 0px 0px 30px;
         ul{

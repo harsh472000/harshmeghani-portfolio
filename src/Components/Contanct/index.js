@@ -10,9 +10,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function Contact() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   const contactDetails = [
     {
       icon: (
@@ -47,8 +47,8 @@ function Contact() {
         />
         <div
           className="contactContainer"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
         >
           <div className="contactContainer__wrapper">
             {contactDetails?.map((contact, index) => {

@@ -81,7 +81,7 @@ function Card() {
                   heading={project.heading}
                   subheading={project.subheading}
                   headingStyle="headingNormal"
-                  subheadingStyle="subHeadingBold"
+                  subheadingStyle="subHeadingNormal"
                   center="true"
                   className="cardContainer__right"
                 />
@@ -92,7 +92,7 @@ function Card() {
                 </div>
                 <div className="cardContainer__right__links">
                   <a href={project.links[0].githubLink} target="_blank"  rel="noreferrer">
-                    code
+                    Code
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="2xl"

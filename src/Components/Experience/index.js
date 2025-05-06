@@ -8,9 +8,21 @@ function Experience() {
   const works = [
     {
       designation: "Frontend Developer",
-      company: "Sovlative",
-      badge: "July 2022 - Present",
+      company: "Cloudairy",
+      badge: "March 2025 - Present",
       present: true,
+      li: [
+        "Engineered advanced diagramming features such as table nodes, 3D shape makers, and chart nodes using React Flow, significantly enhancing the visual editing experience.",
+        "Designed and implemented modular, reusable UI components to ensure visual consistency and maintainability across the platform.",
+        "Optimized complex state management and interactive canvas behaviors, resulting in smoother UX and reduced rendering overhead.",
+        "Collaborated closely with backend and product teams to translate technical architecture into interactive visual tools for cloud solution design.",
+      ],
+    },    
+    {
+      designation: "Frontend Developer",
+      company: "Sovlative",
+      badge: "July 2022 - Feb 2025",
+      present: false,
       li: [
         "Develop reusable and modular components to maintain consistency and reduce code redundancy.",
         "Write clean and well-structured code that is easy to read, understand and maintain.",
