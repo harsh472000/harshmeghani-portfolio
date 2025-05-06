@@ -5,9 +5,6 @@ import "./Contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 //import { faEnvelope } from "@fortawesome/free-brands-svg-icons";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 function Contact() {
   // useEffect(() => {
